@@ -1,0 +1,1 @@
+g++ core.h core.cpp framecode.cpp main.cpp && ./a.out

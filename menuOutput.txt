@@ -1,0 +1,8 @@
+1. Introduction
+2. Log-in
+3. Registration
+4. Help
+5. Exit
+Please select:
+Invalid input, please input an integer number.
+Please select a number from 1 to 5.
