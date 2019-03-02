@@ -443,18 +443,22 @@ bool parseInt(string str, int &rs){
     // case  1: + -
     if(str[0]=='+'||str[0]=='-'){
         for(int i=1; i<sz; i++){
-            int t = (int)(str[i] - '0');
-            if(t<=9 && t>=0){}else{return false;}
+            if(!isDecimal(str[i])) return false;
         }
         if(str[0]=='+') rs = str2int(str.substr(1,sz-1));
         else rs = -str2int(str);
         return true;
     }else{
         for(int i=0; i<sz; i++){
-            int t = (int)(str[i] - '0');
-            if(t<=9 && t>=0){}else{return false;}
+            if(!isDecimal(str[i])) return false;
         }
         rs = str2int(str);
         return true;
     }
+}
+
+bool isDecimal(char t){
+    int n = (int)(t - '0');
+    if(n>=0 && n<=9) return true;
+    else return false;
 }

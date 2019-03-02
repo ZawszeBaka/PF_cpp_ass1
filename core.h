@@ -180,7 +180,7 @@ string strCatInt(string str, int i);
         " .214" : false
     Returns:
       true: if can parse from string; otherwise false
-      int parse from string
+      rs: an integer parse from string
     Status:
     Version 1.0.0
     Things can go wrong:
